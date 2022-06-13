@@ -7,9 +7,13 @@ export class Negociacoes {
         this.negociacoes.push(negociacao);
     }
 
-    lista(): ReadonlyArray<Negociacao> {
+    lista(): readonly Negociacao[] {
         return this.negociacoes;
     }
+
+    // lista(): ReadonlyArray<Negociacao> {
+    //     return this.negociacoes;
+    // }
 
     // lista(): Array<Negociacao> {
     //     // retorna uma cópia da lista original - para imutabilidade da original
